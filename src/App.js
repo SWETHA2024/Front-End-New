@@ -1,10 +1,10 @@
-import Home from "./Home";
-import Login from "./Login";
-import Signup from "./Signup";
-import BookAppointment from "./BookAppointment";
-import DoctorDetails from "./DoctorDetails";
+import Home from "./home";
+import Login from "./login";
+import Signup from "./signup";
+import BookAppointment from "./bookappointment";
+import DoctorDetails from "./doctordetails";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import FullBodyCheckup from "./FullBodyCheckup";
+import FullBodyCheckup from "./fullbodycheckup";
 
 function App() {
   return (
