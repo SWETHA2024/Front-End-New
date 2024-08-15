@@ -1,0 +1,69 @@
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
+import './admindashboard.css';
+
+function AdminDashboard() {
+  const [appointments, setAppointments] = useState([]);
+
+  useEffect(() => {
+    const fetchAppointments = async () => {
+      try {
+        const res = await axios.get('http://localhost:3001/admin/appointments');
+        setAppointments(res.data);
+      } catch (error) {
+        console.error(error);
+      }
+    };
+
+    fetchAppointments();
+  }, []);
+
+  const handleApprove = async (id) => {
+    try {
+      await axios.post(`http://localhost:3001/admin/appointments/${id}/approve`);
+      setAppointments(appointments.filter(app => app._id !== id));
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
+  const handleReject = async (id) => {
+    try {
+      await axios.post(`http://localhost:3001/admin/appointments/${id}/reject`);
+      setAppointments(appointments.filter(app => app._id !== id));
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
+  return (
+    <div className="admin-dashboard-container">
+      <h1>Manage Appointments</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>Doctor</th>
+            <th>User</th>
+            <th>Date</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          {appointments.map((appointment) => (
+            <tr key={appointment._id}>
+              <td>{appointment.doctorId.name}</td>
+              <td>{appointment.userId.email}</td>
+              <td>{new Date(appointment.date).toLocaleString()}</td>
+              <td>
+                <button onClick={() => handleApprove(appointment._id)}>Approve</button>
+                <button onClick={() => handleReject(appointment._id)}>Reject</button>
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
+}
+
+export default AdminDashboard;

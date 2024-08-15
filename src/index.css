@@ -1,0 +1,244 @@
+body {
+  
+  background-image: url(https://t3.ftcdn.net/jpg/06/12/89/52/360_F_612895290_5m4XeQsdmekGhrRlgId6HB3jfPkKvzwq.jpg);
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+  padding: 0;
+  font-family: 'Roboto', Arial, sans-serif;
+ 
+  color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  color: #2c3e50;
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+  color: #3498db;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #3498db;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+input, select {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header Styles */
+.header {
+  background-color: #2980b9;
+  padding: 20px;
+  color: black;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.header a {
+  color: white;
+  margin: 0 10px;
+  font-size: 18px;
+}
+
+.header a:hover {
+  text-decoration: underline;
+}
+
+/* Main Content Styles */
+.main-content {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px 0;
+}
+
+/* Form Styles */
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #34495e;
+}
+
+.form-group input,
+.form-group select {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #2980b9;
+}
+
+.form-group button {
+  background-color: #3498db;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.form-group button:hover {
+  background-color: #2980b9;
+}
+
+/* Home Page Styles */
+.homepage {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.homepage h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.homepage p {
+  font-size: 18px;
+  color: #7f8c8d;
+}
+
+/* Login/Signup Form Styles */
+.login, .signup {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  
+  /* Centering the div vertically and horizontally */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.login h1, .signup h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #2980b9;
+  text-align: center;
+}
+
+.login p, .signup p {
+  font-size: 16px;
+  text-align: center;
+}
+
+.login .form-group, .signup .form-group {
+  margin-bottom: 20px;
+}
+
+.login .form-group button, .signup .form-group button {
+  width: 100%;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #34495e;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  font-size: 14px;
+  margin-top: 40px;
+}
+
+.footer a {
+  color: #ecf0f1;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .header {
+      font-size: 20px;
+      padding: 15px;
+  }
+
+  .container {
+      padding: 10px;
+  }
+
+  .main-content {
+      padding: 15px;
+  }
+
+  .homepage h1 {
+      font-size: 28px;
+  }
+
+  .login, .signup {
+      padding: 20px;
+  }
+
+  button {
+      width: 100%;
+  }
+}
+.join-healthfusion {
+  text-align: center;
+  background-color:crimson; /* Lighter background color */
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  border-bottom: 2px solid #ccc;
+}
+
+.join-healthfusion h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  color:white;
+}
